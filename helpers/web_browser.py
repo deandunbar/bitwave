@@ -3,17 +3,17 @@
 
 
 import webbrowser
-new = 2 # open in a new tab, if possible
+new = 1 # open in a new tab, if possible
 
 class browser_tricks:
-	
+	default_url = "http://localhost:8080"
 	#~ new = 2 # open in a new tab, if possible
 	
-	def open_browser(self,url):
+	def open_browser(self):
 		#~ return render.index()
         # redirect to the static file ...
 		print("Opening the web browser")
-		webbrowser.open(url,new=new)
+		webbrowser.open(self.default_url,new=new)
 
 
 

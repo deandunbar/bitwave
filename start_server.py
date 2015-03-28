@@ -7,6 +7,12 @@ urls = (
   '/', 'index'
 )
 
+
+#~ Open a Web Browser
+browser_tricks = tricks.browser_tricks()
+browser_tricks.open_browser()
+
+
 #~ render = web.template.render('static/dashboard/')
 
 class index:
@@ -19,14 +25,13 @@ class index:
         raise web.seeother('static/dashboard/index.html')
 
 
-#~ Open a Web Browser
-browser_tricks = tricks.browser_tricks()
-ran = browser_tricks.open_browser("http://localhost:8080")
-
-
-
 app = web.application(urls, globals())
 
+
 if __name__ == "__main__": app.run()
+
+
+
+
 
 
