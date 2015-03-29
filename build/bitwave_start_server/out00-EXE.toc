@@ -1,0 +1,9 @@
+('/home/thorax/Documents/dev/hackathon/bitcoin2015/poc/bitwave/bitwave/build/bitwave_start_server/bitwave_start_server',
+ True,
+ False,
+ None,
+ None,
+ [],
+ None,
+ False,
+ 1427603039)
