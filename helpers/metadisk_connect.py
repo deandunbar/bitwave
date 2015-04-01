@@ -54,11 +54,12 @@ class metadisk_connect:
 mdc = metadisk_connect()
 #~ mdc.download_image("164e70faf4e2ff2ce00734e4088b617dd0dbb211c4a93914b9a45614ae2c48c3?key=6b47bc31bc959558018781f509881e417f290e60cb6beea00fdb7b2ce1464cba&token=ZHwaAZ6YzmZ5ONOa")
 #~ raw_img = mdc.download_file("164e70faf4e2ff2ce00734e4088b617dd0dbb211c4a93914b9a45614ae2c48c3?key=6b47bc31bc959558018781f509881e417f290e60cb6beea00fdb7b2ce1464cba&token=ZHwaAZ6YzmZ5ONOa")
-raw_img = mdc.download_file("9ecae2ac2906026c0ac5a212c47b0c9d78ce0f5d002e484251a166977bcb5e59?key=45d34e5f8bc58f2717b19f7ad6284f11c39a1b3ebe1689bb481b9aa36fccef72")
+#~ raw_img = mdc.download_file("9ecae2ac2906026c0ac5a212c47b0c9d78ce0f5d002e484251a166977bcb5e59?key=45d34e5f8bc58f2717b19f7ad6284f11c39a1b3ebe1689bb481b9aa36fccef72")
+raw_img = mdc.download_image("198e34154d79908b3e5b29b3398c1ed06b653c6f13b7d2e93789aaa4a17be221?key=7002230742860eed0799294821ade880d3ce72e2b84bf16ac418038a1c343989")
 #~ raw_img = mdc.download_file("69b5a46c06e89370f1fbd0ae49ed985a8281f48baaf2170ef2adccf988504ade?key=cfca8f9521d0fda48ff3d781687eb4cbacefb5e259150374fe26f78a14c78055")
 
 
-image_showed = mdc.show_image(raw_img)
+#~ image_showed = mdc.show_image(raw_img)
 
 
 

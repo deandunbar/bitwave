@@ -8,7 +8,9 @@ urls = (
   '/', 'index',
   '/index/', 'index',
   "/what/", "what",
-  "/apps/", "apps"
+  "/apps/", "apps",
+  "/upload/", "upload",
+  "/surf/", "surf"
 )
 
 
@@ -34,6 +36,14 @@ class what:
 class apps:
 	def GET(apps):
 		raise web.seeother('/static/dashboard/app.html')
+		
+class upload:
+	def GET(upload):
+		raise web.seeother('/static/dashboard/upload.html')
+
+class surf:
+	def GET(surf):
+		raise web.seeother('/static/dashboard/surf.html')
 
 
 class beginit:

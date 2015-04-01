@@ -45,9 +45,9 @@
             <li><a href="#">Profile</a></li>
             <li><a href="#">Help</a></li>
           </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
+          <span class="navbar-form navbar-right">
+            <input id="download_file_search" type="text" class="form-control" placeholder="Download link">
+          </span>
         </div>
       </div>
     </nav>
@@ -57,8 +57,8 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li class="active"><a class="wave_menu_link" link="index">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
+            <li><a class="wave_menu_link" link="upload" >Upload</a></li>
+            <li><a class="wave_menu_link" link="surf" >Surf</a></li>
             <li><a href="#">Export</a></li>
           </ul>
           <ul class="nav nav-sidebar">
@@ -287,6 +287,20 @@
 		});
 	  
 	  
+	  
+	  $("#download_file_search").keyup(function (e) {
+		    if (e.keyCode == 13) {
+		       
+				e.preventDefault();  //stop the browser from following
+			    window.location.href = 'http://node1.metadisk.org/api/download/'+ $(this).val();
+		        // Do something
+		        console.log("key enter to donwload");
+		        $(this).val('');
+		    }
+		    console.log(e.which);
+		});
+
+
 	  
 	  
 	  
