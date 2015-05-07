@@ -1,7 +1,7 @@
 # bitwave
 Decentralized web browsing
 
-By Dean and Harris
+By Dean Dunbar and Harris Dagha
 
 
 
