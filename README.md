@@ -2,9 +2,9 @@
 
 <img src="logo.png" width="350">
 
-Decentralized web browsing
+##Decentralized web browsing
 
-By Dean Dunbar and Harris Dagha
+###By Dean Dunbar and Harris Dagha
 
 
 
