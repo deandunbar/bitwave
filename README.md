@@ -1,5 +1,6 @@
 # Bitwave
 ![Bitwave logo](logo.png)
+<img src="logo.png" width="50">
 
 Decentralized web browsing
 
