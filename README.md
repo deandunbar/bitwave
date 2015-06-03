@@ -1,9 +1,8 @@
 # Bitwave
 
-<img src="logo.png" width="350">
 
 ##Decentralized web browsing
-
+<img src="logo.png" width="350">
 ###By Dean Dunbar and Harris Dagha
 
 
