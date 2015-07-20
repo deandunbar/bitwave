@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Dashboard Template for Bootstrap</title>
+    <title>Bitwave</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -31,14 +31,17 @@
 	  font-size: x-large;
 		color:white;
 		font-weight:bold;
-	  
+
+  }
+  .navbar-inverse .navbar-nav li a {
+    color: #FFF;
   }
   #bw_top_bar{
 		background-color:#17BAEF;
 	}
-	  
-  
-  
+
+
+
   </style>
 
   <body>
@@ -53,22 +56,22 @@
             <span class="icon-bar"></span>
           </button>
           <div class="logo pull-left">
-				
+
                 <span class="logo-title"> <img style="max-width:50px;" src="assets/images/logo.png"></span>
             </div>
-            
-          <a class="navbar-brand" href="#"> Bitwave</a>
-          
+
+          <a class="navbar-brand" href="#">Bitwave</a>
+
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
             <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
+            <li><a href="#">Settings</a></li>
+            <!-- <li><a href="#">Help</a></li> -->
           </ul>
           <span class="navbar-form navbar-right">
-            <input id="download_file_search" type="text" class="form-control" placeholder="Download link">
+            <input id="download_file_search" type="text" class="form-control" placeholder="Place link here">
           </span>
         </div>
       </div>
@@ -81,28 +84,29 @@
             <li class="active"><a class="wave_menu_link" link="index">Overview <span class="sr-only">(current)</span></a></li>
             <li><a class="wave_menu_link" link="upload" >Upload</a></li>
             <li><a class="wave_menu_link" link="surf" >Surf</a></li>
-            <li><a href="#">Export</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
+
             <li><a class="wave_menu_link" link="apps">Applications</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
           </ul>
           <ul class="nav nav-sidebar">
+            <li><a href="#">Export</a></li>
+<!--             <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+            <li><a href="">More navigation</a></li> -->
+          </ul>
+<!--           <ul class="nav nav-sidebar">
             <li><a href="">Nav item again</a></li>
             <li><a href="">One more nav</a></li>
             <li><a href="">Another nav item</a></li>
-          </ul>
+          </ul> -->
         </div>
-        
+
         <div id="wave_content" >
-       
-       
+
+
 	        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 	          <h1 class="page-header">Dashboard</h1>
-	
+
 	          <div class="row placeholders">
 	            <div class="col-xs-6 col-sm-3 placeholder">
 	              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
@@ -125,10 +129,10 @@
 	              <span class="text-muted">Something else</span>
 	            </div>
 	          </div>
-	
+
 	          <h2 class="sub-header">Section title</h2>
 	          <div class="table-responsive">
-	            <table class="table table-striped">
+	            <!-- <table class="table table-striped">
 	              <thead>
 	                <tr>
 	                  <th>#</th>
@@ -252,12 +256,12 @@
 	                  <td>libero</td>
 	                </tr>
 	              </tbody>
-	            </table>
+	            </table> -->
 	          </div>
 	        </div>
-			
-		</div> 
-     
+
+		</div>
+
       </div>
     </div>
 
@@ -270,49 +274,49 @@
     <script src="js/holder.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    
+
     <script>
-    
-    
-    
+
+
+
     //~ wave_content
-    
+
     $( document ).ready(function() {
 	  // Handler for .ready() called.
-	  
-	  
-	  
+
+
+
 	  function load_remote(url){
-		  
-		
-		
+
+
+
 	$.get( "http://localhost:8080/" + url + "/", function( data ) {
   $( "#wave_content" ).html( data );
   //~ $("#view_county_holder").show();
 
 
 
-	});  
-		  
-		  
-		  
+	});
+
+
+
 	  }
-	  
-	  
-	  
-	  
+
+
+
+
 	  $( ".wave_menu_link" ).click(function() {
 	  console.log( $(this).attr("link") );
 	  var link_value = $(this).attr("link") ;
 	  worked = load_remote(link_value);
-	  
+
 		});
-	  
-	  
-	  
+
+
+
 	  $("#download_file_search").keyup(function (e) {
 		    if (e.keyCode == 13) {
-		       
+
 				e.preventDefault();  //stop the browser from following
 			    window.location.href = 'http://node1.metadisk.org/api/download/'+ $(this).val();
 		        // Do something
@@ -323,18 +327,18 @@
 		});
 
 
-	  
-	  
-	  
-	  
-  
+
+
+
+
+
 	});
-    
-    
+
+
     </script>
-    
-    
-    
-    
+
+
+
+
   </body>
 </html>
